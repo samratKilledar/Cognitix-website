@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import "./Aboutuspageui.css";
 import { FaBolt, FaMobileAlt, FaPaintBrush, FaUsers } from "react-icons/fa";
@@ -19,6 +20,12 @@ function Aboutuspage() {
     return () => clearInterval(timer);
   }, []);
 
+=======
+import React from "react";
+import "./Aboutuspageui.css";
+
+function Aboutuspage() {
+>>>>>>> main
   return (
     <div className="about-page">
 
