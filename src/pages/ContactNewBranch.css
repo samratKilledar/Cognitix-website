@@ -1,69 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
 
-        .contact-container {
-            width: 400px;
-            margin: 60px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+.contact-container {
+    width: 400px;
+    margin: 80px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-        h2 {
-            text-align: center;
-        }
+.contact-container h2 {
+    margin-bottom: 20px;
+}
 
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+form {
+    display: flex;
+    flex-direction: column;
+}
 
-        textarea {
-            height: 100px;
-            resize: none;
-        }
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
 
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: blue;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
 
-        button:hover {
-            background-color: darkblue;
-        }
-    </style>
-</head>
-<body>
+button {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-    <div class="contact-container">
-        <h2>Contact Us</h2>
-
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-
-</body>
-</html>
+button:hover {
+    background-color: #0056b3;
+}
