@@ -1,31 +1,7 @@
-<<<<<<< HEAD
-import React, { useState, useEffect } from "react";
-import "./Aboutuspageui.css";
-import { FaBolt, FaMobileAlt, FaPaintBrush, FaUsers } from "react-icons/fa";
-
-function Aboutuspage() {
-
-  // -------- Counter Function ----------
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let timer = setInterval(() => {
-      setCount((prev) => {
-        if (prev < 100) return prev + 1;
-        clearInterval(timer);
-        return prev;
-      });
-    }, 20);
-
-    return () => clearInterval(timer);
-  }, []);
-
-=======
 import React from "react";
 import "./Aboutuspageui.css";
 
 function Aboutuspage() {
->>>>>>> main
   return (
     <div className="about-page">
 
@@ -44,19 +20,19 @@ function Aboutuspage() {
         <div className="feature-box">
 
           <div className="card">
-            <FaBolt className="icon"/>
+            {/* <FaBolt className="icon"/> */}
             <h3>Fast Performance</h3>
             <p>Optimized React apps for smooth experience.</p>
           </div>
 
           <div className="card">
-            <FaMobileAlt className="icon"/>
+            {/* <FaMobileAlt className="icon"/> */}
             <h3>Responsive</h3>
             <p>Perfect design for mobile and desktop devices.</p>
           </div>
 
           <div className="card">
-            <FaPaintBrush className="icon"/>
+            {/* <FaPaintBrush className="icon"/> */}
             <h3>Modern UI</h3>
             <p>Beautiful and clean user interface design.</p>
           </div>
@@ -67,8 +43,8 @@ function Aboutuspage() {
       {/* COUNTER SECTION */}
       <section className="counter">
         <div className="counter-box">
-          <FaUsers className="counter-icon"/>
-          <h2>{count}+</h2>
+          {/* <FaUsers className="counter-icon"/> */}
+          {/* <h2>{count}+</h2> */}
           <p>Happy Users</p>
         </div>
       </section>
