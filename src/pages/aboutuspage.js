@@ -1,55 +1,104 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Aboutuspageui.css";
+import { FaBolt, FaMobileAlt, FaPaintBrush, FaUsers } from "react-icons/fa";
 
-function About() {
+function Aboutuspage() {
+
+  // -------- Counter Function ----------
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let timer = setInterval(() => {
+      setCount((prev) => {
+        if (prev < 100) return prev + 1;
+        clearInterval(timer);
+        return prev;
+      });
+    }, 20);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <div className="page">
+    <div className="about-page">
 
-      {/* Title Section */}
-      <h1>About Us</h1>
+      {/* HERO SECTION */}
+      <section className="hero">
+        <h1>About Our Website</h1>
+        <p>
+          We create modern, fast and responsive web applications using React JS.
+        </p>
+      </section>
 
-      <p className="about-text">
-        This is a simple React website created for learning purpose.
-        We are learning how to build modern and responsive websites
-        using React JS.
-      </p>
-
-      {/* Features Section */}
-      <div className="features">
+      {/* FEATURES */}
+      <section className="features">
         <h2>Our Features</h2>
 
         <div className="feature-box">
+
           <div className="card">
-            <h3>⚡ Fast</h3>
-            <p>React provides fast and smooth user experience.</p>
+            <FaBolt className="icon"/>
+            <h3>Fast Performance</h3>
+            <p>Optimized React apps for smooth experience.</p>
           </div>
 
           <div className="card">
-            <h3>📱 Responsive</h3>
-            <p>Works perfectly on mobile, tablet and desktop.</p>
+            <FaMobileAlt className="icon"/>
+            <h3>Responsive</h3>
+            <p>Perfect design for mobile and desktop devices.</p>
           </div>
 
           <div className="card">
-            <h3>🎨 Modern Design</h3>
-            <p>Clean and attractive UI using CSS styling.</p>
+            <FaPaintBrush className="icon"/>
+            <h3>Modern UI</h3>
+            <p>Beautiful and clean user interface design.</p>
           </div>
+
         </div>
-      </div>
+      </section>
 
-      {/* Team Section */}
-      <div className="team">
+      {/* COUNTER SECTION */}
+      <section className="counter">
+        <div className="counter-box">
+          <FaUsers className="counter-icon"/>
+          <h2>{count}+</h2>
+          <p>Happy Users</p>
+        </div>
+      </section>
+
+      {/* TEAM SECTION */}
+      <section className="team">
         <h2>Our Team</h2>
-        <p>
-          We are passionate developers learning React JS and building
-          modern web applications.
-        </p>
-      </div>
 
-      {/* Button */}
-      <button className="about-btn">Contact Us</button>
+        <div className="team-container">
+
+          <div className="team-card">
+            <h3>Developer</h3>
+            <p>Frontend React Developer</p>
+          </div>
+
+          <div className="team-card">
+            <h3>Designer</h3>
+            <p>UI/UX Specialist</p>
+          </div>
+
+          <div className="team-card">
+            <h3>Manager</h3>
+            <p>Project Coordinator</p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* CONTACT BUTTON */}
+      <div className="contact-section">
+        <button className="contact-btn">
+          Contact Us
+        </button>
+      </div>
 
     </div>
   );
 }
 
-export default About;
+export default Aboutuspage;
