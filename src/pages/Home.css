@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffffff, #f3f0ff);
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(135deg, #ede9fe, #ffffff);
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: #4c1d95;
+}
+
+.hero h1 span {
+  color: #7c3aed;
+}
+
+.hero p {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  color: #5b21b6;
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.services {
+  padding: 5rem 2rem;
+  background: #faf9ff;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2.7rem;
+  color: #4c1d95;
+  margin-bottom: 3rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(109, 40, 217, 0.15);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 30px 80px rgba(109, 40, 217, 0.25);
+}
+
+.service-card .icon {
+  font-size: 3rem;
+  color: #7c3aed;
+  margin-bottom: 1rem;
+}
+
+.stats {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  color: white;
+  text-align: center;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.stat-box h3 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.cta {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: #ede9fe;
+}
+
+.cta button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background: #6d28d9;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta button:hover {
+  background: #5b21b6;
+}
