@@ -3,7 +3,7 @@ import { FaLaptopCode, FaMobileAlt } from "react-icons/fa";
 import { MdSecurity } from "react-icons/md";
 import { GiTeacher } from "react-icons/gi";
 import AnimatedIcon from "./AnimatedIcon";
-
+import "./Hero.css"
 export default function Hero() {
   return (
     <section className="hero">

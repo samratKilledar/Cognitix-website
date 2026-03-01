@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import "../App.css"
 export default function States() {
   const stats = [
     { number: "120+", label: "Projects Completed" },
@@ -28,3 +28,4 @@ export default function States() {
     </section>
   );
 }
+
