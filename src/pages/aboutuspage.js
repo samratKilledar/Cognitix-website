@@ -1,7 +1,7 @@
 import React from "react";
-import "./About.css";
+import "./Aboutuspageui.css";
 
-function About() {
+function Aboutuspage() {
   return (
     <div className="page">
 
@@ -52,4 +52,4 @@ function About() {
   );
 }
 
-export default About;
+export default Aboutuspage;
