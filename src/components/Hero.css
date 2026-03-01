@@ -1,0 +1,144 @@
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+  position: relative;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 6rem 1.5rem;
+
+  /* FULLY TRANSPARENT */
+  background: transparent;
+
+  overflow: visible; /* IMPORTANT */
+}
+/* Glow background effect */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.15), transparent 70%);
+  top: -200px;
+  right: -200px;
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.15), transparent 70%);
+  bottom: -200px;
+  left: -200px;
+  z-index: 0;
+}
+
+/* Make content above glow */
+.hero h1,
+.hero p,
+.hero-icons {
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= HEADINGS ================= */
+
+.hero h1 {
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: #4c1d95;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.hero h1 span {
+  color: #7c3aed;
+  text-shadow: 0 0 25px rgba(124, 58, 237, 0.4);
+}
+
+/* ================= DESCRIPTION ================= */
+
+.hero p {
+  max-width: 750px;
+  font-size: 1.2rem;
+  color: #5b21b6;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+/* ================= ICON SECTION ================= */
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Glass style icon container (inside AnimatedIcon) */
+.hero-icons > div {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 15px 40px rgba(109, 40, 217, 0.2);
+  transition: all 0.4s ease;
+}
+
+/* Hover effect */
+.hero-icons > div:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 60px rgba(109, 40, 217, 0.35);
+}
+
+/* Floating animation */
+@keyframes floatIcon {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Apply floating */
+.hero-icons > div {
+  animation: floatIcon 4s ease-in-out infinite;
+}
+
+/* Stagger animation */
+.hero-icons > div:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.hero-icons > div:nth-child(3) {
+  animation-delay: 1s;
+}
+.hero-icons > div:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-icons {
+    gap: 1.5rem;
+  }
+}
