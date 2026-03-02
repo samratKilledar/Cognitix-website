@@ -12,7 +12,7 @@ function Navbar() {
 
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-        <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+        <Link to="/Aboutuspage" onClick={() => setMenuOpen(false)}>Aboutuspage</Link>
         <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
         <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>

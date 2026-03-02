@@ -6,7 +6,7 @@ function Aboutuspage() {
     <div className="page">
 
       {/* Title Section */}
-      <h1>About Us</h1>
+      <h1>About Us page</h1>
 
       <p className="about-text">
         This is a simple React website created for learning purpose.

@@ -8,7 +8,7 @@
 .about-text {
   max-width: 700px;
   margin: auto;
-  color: #555;
+  color: #141111;
   font-size: 18px;
 }
 
@@ -27,7 +27,7 @@
 
 /* Cards */
 .card {
-  background: #f4f4f4;
+  background: linear-gradient(135deg,#ea49d7,#58a4b9);;
   padding: 20px;
   width: 250px;
   border-radius: 10px;
