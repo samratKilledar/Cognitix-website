@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.about-page {
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg,#ea49d7,#58a4b9);;
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* FEATURES */
+.features {
+  padding: 60px 20px;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 260px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.icon {
+  font-size: 40px;
+  color: #007bff;
+}
+
+/* COUNTER */
+.counter {
+  background: #f4f6f9;
+  padding: 60px;
+}
+
+.counter-box h2 {
+  font-size: 40px;
+  color: #007bff;
+}
+
+.counter-icon {
+  font-size: 35px;
+}
+
+/* TEAM */
+.team {
+  padding: 60px 20px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: #fff;
+  padding: 25px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  background: #007bff;
+  color: white;
+  transform: translateY(-8px);
+}
+
+/* CONTACT BUTTON */
+.contact-section {
+  margin: 50px;
+}
+
+.contact-btn {
+  padding: 14px 30px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background: #0056b3;
+}
