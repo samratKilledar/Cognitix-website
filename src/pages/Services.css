@@ -10,8 +10,8 @@
   padding-bottom: 80px;
 
   /* Corporate Gradient Background */
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: white;
+  background: linear-gradient(135deg, #56137e, #edf0f1, #592c64);
+  color: rgb(17, 16, 16);
 }
 
 /* Hero Section */
@@ -72,7 +72,7 @@
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: 600;
-  color: #00c6ff;
+  color: #151515;
 }
 
 .service-card p {
