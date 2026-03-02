@@ -1,5 +1,4 @@
 /* WATERFALL ICON BACKGROUND */
-
 .icon-waterfall {
   position: fixed;
   top: 0;
@@ -80,7 +79,7 @@
 /* ================= CARD ================= */
 
 .service-card {
-  background: linear-gradient(to right, #c325eb, #541e8a);
+  background: linear-gradient(to right, #df7af8, #bc87f1);
   backdrop-filter: blur(12px);
 
   padding: 2.5rem 2rem;
