@@ -35,7 +35,7 @@ body {
 }
 
 .card {
-  background: white;
+  background: linear-gradient(135deg,#ea49d7,#58a4b9);;
   width: 260px;
   padding: 25px;
   border-radius: 12px;
@@ -54,7 +54,7 @@ body {
 
 /* COUNTER */
 .counter {
-  background: #f4f6f9;
+  background: linear-gradient(135deg,#ea49d7,#58a4b9);;
   padding: 60px;
 }
 
@@ -80,7 +80,7 @@ body {
 }
 
 .team-card {
-  background: #fff;
+  background: linear-gradient(135deg,#ea49d7,#58a4b9);;
   padding: 25px;
   width: 220px;
   border-radius: 10px;
@@ -89,7 +89,7 @@ body {
 }
 
 .team-card:hover {
-  background: #007bff;
+  background: linear-gradient(135deg,#ea49d7,#58a4b9);;
   color: white;
   transform: translateY(-8px);
 }
@@ -102,7 +102,7 @@ body {
 .contact-btn {
   padding: 14px 30px;
   border: none;
-  background: #007bff;
+  background: linear-gradient(135deg,#ea49d7,#58a4b9);;
   color: white;
   font-size: 18px;
   border-radius: 8px;
