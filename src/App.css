@@ -43,7 +43,7 @@
 .stats {
   padding: 6rem 2rem;
   text-align: center;
-  color: gray;
+  color: rgb(23, 23, 24);
 }
 
 .stats h2 {
@@ -67,7 +67,7 @@
 
 .stat-box {
   backdrop-filter: blur(12px);
-
+  background: linear-gradient(to right, #ca25eb, #5f1e8a);
   padding: 2.5rem 1.5rem;
   border-radius: 20px;
 
@@ -181,7 +181,7 @@
   border: none;
   border-radius: 50px;
 
-  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  background: linear-gradient(135deg, #9828d9, #73058e);
   color: white;
 
   cursor: pointer;

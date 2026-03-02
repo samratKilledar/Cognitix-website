@@ -16,7 +16,7 @@
   top: -50px;
 
   /* Make icons more visible */
-  color: rgba(124, 58, 237, 0.35);
+  color: rgba(36, 10, 80, 0.35);
 
   animation-name: fall;
   animation-timing-function: linear;
@@ -47,6 +47,7 @@
 .cta {
   position: relative;
   z-index: 2;
+  
 }
 
 /* ================= SERVICES SECTION ================= */
@@ -54,6 +55,7 @@
 .services {
   padding: 6rem 2rem;
   text-align: center;
+  
 }
 
 .services h2 {
@@ -72,12 +74,13 @@
   gap: 2.5rem;
   max-width: 1200px;
   margin: auto;
+  
 }
 
 /* ================= CARD ================= */
 
 .service-card {
-  background: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(to right, #c325eb, #541e8a);
   backdrop-filter: blur(12px);
 
   padding: 2.5rem 2rem;
@@ -97,9 +100,9 @@
 
 .service-card .icon {
   font-size: 3rem;
-  color: #7c3aed;
+  color: #121112;
   margin-bottom: 1.2rem;
-
+  
   transition: transform 0.3s ease;
 }
 
@@ -112,14 +115,14 @@
 .service-card h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  color: #4c1d95;
+  color: #121214;
 }
 
 /* ================= DESCRIPTION ================= */
 
 .service-card p {
   font-size: 0.95rem;
-  color: #5b21b6;
+  color: #0a090a;
   line-height: 1.6;
 }
 
@@ -145,6 +148,7 @@
   .service-grid {
     grid-template-columns: 1fr;
     gap: 1.8rem;
+    
   }
 
   .service-card {

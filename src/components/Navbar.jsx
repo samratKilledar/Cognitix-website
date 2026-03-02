@@ -8,14 +8,6 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-<<<<<<< HEAD
-      <h2></h2>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/contact">Contact</Link>
-=======
       <h2>Cognitix PVT. LTD. Kolhapur</h2>
 
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
@@ -27,7 +19,6 @@ function Navbar() {
 
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FaTimes /> : <FaBars />}
->>>>>>> faff143c2589adea2edef7e20b8679b637adb183
       </div>
     </nav>
   );
