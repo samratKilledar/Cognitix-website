@@ -35,8 +35,7 @@ body {
 }
 
 .card {
-  background: linear-gradient(135deg,#ea49d7,#58a4b9);;
-  background: ;
+  background: linear-gradient(135deg,#ea49d7,#58a4b9);
   width: 260px;
   padding: 25px;
   border-radius: 12px;
@@ -55,8 +54,8 @@ body {
 
 /* COUNTER */
 .counter {
-  background: linear-gradient(135deg,#ea49d7,#58a4b9);;
-  padding: 60px;
+  background: linear-gradient(135deg,#ea49d7,#58a4b9);
+  padding: 40px;
 }
 
 .counter-box h2 {
