@@ -1,201 +1,114 @@
-/* GLOBAL */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f8f9fc;
+  font-family: Arial, sans-serif;
 }
 
 .about-page {
   text-align: center;
-  overflow-x: hidden;
 }
 
-/* ================= HERO SECTION ================= */
-
+/* HERO */
 .hero {
-  background: linear-gradient(135deg, #007bff, #00c6ff);
+  background: linear-gradient(135deg,#007bff,#00c6ff);
   color: white;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 42px;
 }
 
 .hero p {
-  font-size: 20px;
-  max-width: 700px;
-  margin: auto;
-}
-
-/* ================= FEATURES ================= */
-
-.features {
-  padding: 80px 20px;
-}
-
-.features h2 {
-  margin-bottom: 40px;
-  font-size: 32px;
-}
-
-.feature-box {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: white;
-  width: 280px;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: 0.4s ease;
-}
-
-.card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
-
-.icon {
-  font-size: 45px;
-  color: #007bff;
-  margin-bottom: 15px;
-}
-
-/* ================= MISSION & VISION ================= */
-
-.info-section {
-  padding: 80px 20px;
-  background: white;
-}
-
-.info-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.info-box {
-  width: 350px;
-  padding: 30px;
-  border-radius: 12px;
-  background: #f4f6f9;
-  transition: 0.3s;
-}
-
-.info-box:hover {
-  background: #007bff;
-  color: white;
-  transform: scale(1.05);
-}
-
-/* ================= COUNTER SECTION ================= */
-
-.counter {
-  background: #f1f3f7;
-  padding: 80px 20px;
-}
-
-.counter-container {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.counter-box h2 {
-  font-size: 42px;
-  color: #007bff;
-}
-
-.counter-box p {
   font-size: 18px;
 }
 
-/* ================= TEAM SECTION ================= */
-
-.team {
-  padding: 80px 20px;
+/* FEATURES */
+.features {
+  padding: 60px 20px;
 }
 
-.team h2 {
-  margin-bottom: 40px;
-}
-
-.team-container {
+.feature-box {
   display: flex;
   justify-content: center;
   gap: 25px;
   flex-wrap: wrap;
 }
 
-.team-card {
-  background: #fff;
-  padding: 30px;
-  width: 250px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+.card {
+  background: white;
+  width: 260px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   transition: 0.4s;
 }
 
-.team-card:hover {
-  background: linear-gradient(135deg, #007bff, #00c6ff);
-  color: white;
-  transform: translateY(-10px);
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
 }
 
-/* ================= CONTACT SECTION ================= */
+.icon {
+  font-size: 40px;
+  color: #007bff;
+}
 
-.contact-section {
+/* COUNTER */
+.counter {
+  background: #f4f6f9;
   padding: 60px;
 }
 
-.contact-btn {
-  padding: 15px 35px;
-  border: none;
-  background: linear-gradient(135deg, #007bff, #00c6ff);
-  color: white;
-  font-size: 18px;
-  border-radius: 30px;
-  cursor: pointer;
+.counter-box h2 {
+  font-size: 40px;
+  color: #007bff;
+}
+
+.counter-icon {
+  font-size: 35px;
+}
+
+/* TEAM */
+.team {
+  padding: 60px 20px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: #fff;
+  padding: 25px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
 
-.contact-btn:hover {
-  transform: scale(1.1);
-}
-
-/* ================= FOOTER ================= */
-
-.footer {
-  background: #222;
+.team-card:hover {
+  background: #007bff;
   color: white;
-  padding: 25px;
-  margin-top: 50px;
+  transform: translateY(-8px);
 }
 
-/* ================= RESPONSIVE ================= */
+/* CONTACT BUTTON */
+.contact-section {
+  margin: 50px;
+}
 
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 32px;
-  }
+.contact-btn {
+  padding: 14px 30px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-  .card {
-    width: 90%;
-  }
-
-  .info-box {
-    width: 90%;
-  }
-
-  .team-card {
-    width: 90%;
-  }
+.contact-btn:hover {
+  background: #0056b3;
 }
