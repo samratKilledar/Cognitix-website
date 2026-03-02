@@ -5,13 +5,8 @@ function Aboutuspage() {
   return (
     <div className="about-page">
 
-      {/* HERO SECTION */}
-      <section className="hero">
-        <h1>About Our Website</h1>
-        <p>
-          We create modern, fast and responsive web applications using React JS.
-        </p>
-      </section>
+      {/* Title Section */}
+      <h1>About Us page</h1>
 
       {/* FEATURES */}
       <section className="features">

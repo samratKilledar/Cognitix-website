@@ -3,7 +3,7 @@ import { FaLaptopCode, FaMobileAlt } from "react-icons/fa";
 import { MdSecurity } from "react-icons/md";
 import { GiTeacher } from "react-icons/gi";
 import AnimatedIcon from "./AnimatedIcon";
-
+import "./Hero.css"
 export default function Hero() {
   return (
     <section className="hero">
@@ -25,10 +25,10 @@ export default function Hero() {
       </motion.p>
 
       <div className="hero-icons">
-        <AnimatedIcon icon={<FaLaptopCode />} color="#7c3aed" />
-        <AnimatedIcon icon={<FaMobileAlt />} color="#6d28d9" />
-        <AnimatedIcon icon={<MdSecurity />} color="#9333ea" />
-        <AnimatedIcon icon={<GiTeacher />} color="#8b5cf6" />
+        <AnimatedIcon icon={<FaLaptopCode />} color="#080708" />
+        <AnimatedIcon icon={<FaMobileAlt />} color="#0e0d0e" />
+        <AnimatedIcon icon={<MdSecurity />} color="#0c0c0c" />
+        <AnimatedIcon icon={<GiTeacher />} color="#101010" />
       </div>
     </section>
   );
